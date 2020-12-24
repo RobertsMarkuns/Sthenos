@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Sthenos</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="fullname">Fullname</string>
+    <string name="email">Email</string>
+    <string name="loginhere">Already have an account? Login</string>
+    <string name="signuphere">Dont have an account? Sign Up</string>
 </resources>
