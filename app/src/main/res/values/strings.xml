@@ -8,4 +8,12 @@
     <string name="email">Email</string>
     <string name="loginhere">Already have an account? Login</string>
     <string name="signuphere">Dont have an account? Sign Up</string>
+    <string name="mobility">MOBILITY</string>
+    <string name="indoor_exercise">INDOOR EXERCISE</string>
+    <string name="outdoor_exercise">OUTDOOR EXERCISE</string>
+    <string name="equipment">EQUIPMENT</string>
+    <string name="mobility_image">mobility image</string>
+    <string name="indoor_image">indoor image</string>
+    <string name="outdoor_image">outdoor image</string>
+    <string name="equipment_image">equipment image</string>
 </resources>
