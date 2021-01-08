@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -40,6 +55,7 @@
             app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mobilityCardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="10dp"
@@ -51,7 +67,7 @@
                     android:background="@drawable/gradient_red">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/mobilityTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -64,7 +80,7 @@
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/mobilityImageView"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_alignParentStart="true"
@@ -77,6 +93,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/outdoorCardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="10dp"
@@ -88,7 +105,7 @@
                     android:background="@drawable/gradient_orange">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/indoorTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -101,7 +118,7 @@
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/indoorImageView"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_alignParentStart="true"
@@ -114,6 +131,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/indoorCardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="10dp"
@@ -125,7 +143,7 @@
                     android:background="@drawable/gradient_green">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/outdoorTextView"
                         android:layout_width="249dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -138,7 +156,7 @@
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/outdoorImageView"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_alignParentStart="true"
@@ -151,6 +169,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/equipmentCardView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="10dp"
@@ -162,7 +181,7 @@
                     android:background="@drawable/gradient_skylineblue">
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/equipmentTextView"
                         android:layout_width="190dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -175,7 +194,7 @@
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/equipmentImageView"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_alignParentStart="true"
@@ -192,3 +211,5 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

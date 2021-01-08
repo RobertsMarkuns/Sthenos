@@ -1,115 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoLoginImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/login_image_description"
+        android:src="@drawable/logo_sthenos_white"
+        android:transitionName="logoAnim"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcomeLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="40sp"
+        android:fontFamily="@font/rubik_bold_italic"
+        android:textColor="@color/black"
+        android:transitionName="welcomeAnim"/>
+
+    <TextView
+        android:id="@+id/subLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium_italic"
+        android:text="@string/login_to_continue"
+        android:textColor="@color/red_200"
+        android:textSize="18sp"
+        android:transitionName="subTextAnim"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/rubik_bold"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textColor="@color/purple_500"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="398dp"
-        android:layout_height="318dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutUsername"
+            android:id="@+id/usernameLoginLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="30dp"
             android:hint="@string/username"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:transitionName="userAnim"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/usernameLogin"
+                android:id="@+id/usernameLoginInputEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_user"
-                android:fontFamily="@font/rubik" />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutPassword"
+            android:id="@+id/passwordLoginLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="30dp"
             android:hint="@string/password"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsername">
+            android:transitionName="passAnim"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordLogin"
+                android:id="@+id/passwordLoginInputEditText"
                 android:layout_width="match_parent"
-                android:inputType="textPassword"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_pass"
-                android:fontFamily="@font/rubik" />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <ProgressBar
-            android:id="@+id/progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
 
         <Button
-            android:id="@+id/buttonLogin"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="346dp"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/btn_rounded"
-            android:fontFamily="@font/rubik_medium"
             android:text="@string/login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/progress" />
+            android:background="@drawable/btn_rounded"
+            android:layout_marginTop="30dp"
+            android:transitionName="btnAnim"/>
 
-        <TextView
-            android:id="@+id/signUpText"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="32dp"
-            android:fontFamily="@font/rubik"
-            android:text="@string/signuphere"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="@string/forgot_password"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/black"
+            android:background="#00000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnSignUpHere"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/signuphere"
+            android:textColor="@color/black"
+            android:background="#00000000"
+            android:fontFamily="@font/rubik"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:transitionName="logSignAnim"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
