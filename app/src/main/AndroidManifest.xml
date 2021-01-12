@@ -12,11 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sthenos"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".RepRangeRandomizer"></activity>
+        <activity android:name=".UserProfile" />
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".LowerBodyLibrary" />
         <activity android:name=".UpperBodyLibrary" />
-        <activity android:name=".SplashActivity" >
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +29,7 @@
         <activity android:name=".IndoorActivity" />
         <activity android:name=".OutdoorActivity" />
         <activity android:name=".MobilityActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
