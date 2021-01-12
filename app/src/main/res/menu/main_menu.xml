@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_mobility"
+            android:icon="@drawable/mobility"
+            android:title="@string/nav_mobility" />
+
+        <item
+            android:id="@+id/nav_indoor"
+            android:icon="@drawable/white_bechpress"
+            android:title="@string/nav_indoor_exercise" />
+
+        <item
+            android:id="@+id/nav_outdoor"
+            android:icon="@drawable/white_pullupbar"
+            android:title="@string/nav_outdoor_exercise" />
+
+        <item
+            android:id="@+id/nav_equipment"
+            android:icon="@drawable/white_rings"
+            android:title="@string/nav_equipment" />
+
+    </group>
+
+
+        <item android:title="@string/profile">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_login"
+                        android:icon="@drawable/login"
+                        android:title="@string/login" />
+
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:icon="@drawable/ic_user"
+                        android:title="@string/profile" />
+
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_logout"
+                        android:title="@string/logout" />
+
+                </group>
+            </menu>
+
+        </item>
+
+
+    <item android:title="@string/communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="@string/share" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate"
+                android:title="@string/rate_us" />
+
+        </menu>
+
+    </item>
+
+</menu>
