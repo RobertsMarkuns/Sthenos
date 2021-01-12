@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992312195801",
+    "project_id": "sthenos-cb7dd",
+    "storage_bucket": "sthenos-cb7dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992312195801:android:acf5557e29eafa43fddcc8",
+        "android_client_info": {
+          "package_name": "com.example.sthenos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992312195801-sk5npar8nmjuha4nol2e4egj45ru3lu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW7_bqE8s1v5ZQTeC5vQtCvuFt_G7RIXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992312195801-sk5npar8nmjuha4nol2e4egj45ru3lu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

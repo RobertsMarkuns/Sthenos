@@ -65,4 +65,16 @@
     <string name="login_to_continue">Login to continue</string>
     <string name="login_image_description">Login image description</string>
     <string name="sign_up_to_start_your_strenght_journey">Sign up to start your strenght journey</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="userprofileimage_descripton">userProfileImage Descripton</string>
+    <string name="longestworkouttimetext">3:00:57</string>
+    <string name="longest_workout_time">Longest workout time</string>
+    <string name="pb_rep_range">30 dips</string>
+    <string name="pb_rep_range_desc">PB rep range</string>
+    <string name="update">UPDATE</string>
+    <string name="max_rep_count">Max rep count is 30</string>
+    <string name="rep_range_randomizer">REP RANGE RANDOMIZER</string>
+    <string name="roll">Roll</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
 </resources>
