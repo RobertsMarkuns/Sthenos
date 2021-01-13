@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sthenos"
         android:usesCleartextTraffic="true">
-        <activity android:name=".RepRangeRandomizer"></activity>
+        <activity android:name=".Stopwatch"></activity>
+        <activity android:name=".RepRangeRandomizer" />
         <activity android:name=".UserProfile" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />

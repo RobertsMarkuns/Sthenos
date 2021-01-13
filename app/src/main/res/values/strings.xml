@@ -77,4 +77,7 @@
     <string name="roll">Roll</string>
     <string name="min">Min</string>
     <string name="max">Max</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
 </resources>
