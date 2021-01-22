@@ -19,8 +19,9 @@
         <activity android:name=".UserProfile" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".LowerBodyLibrary" />
-        <activity android:name=".UpperBodyLibrary" />
+        <activity android:name=".UpperBodySelection"/>
+        <activity android:name=".LowerBodySelection"/>
+        <activity android:name=".PlankSelection"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

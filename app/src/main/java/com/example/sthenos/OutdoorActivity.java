@@ -3,6 +3,7 @@ package com.example.sthenos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -34,7 +35,7 @@ public class OutdoorActivity extends AppCompatActivity {
         pushupsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, PushUpLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, PushUpLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -43,8 +44,8 @@ public class OutdoorActivity extends AppCompatActivity {
         plankCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, PlankLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, PlankSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -52,7 +53,7 @@ public class OutdoorActivity extends AppCompatActivity {
         absOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, AbsLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, AbsLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -61,7 +62,7 @@ public class OutdoorActivity extends AppCompatActivity {
         jumpOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, JumpLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, JumpLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -70,7 +71,7 @@ public class OutdoorActivity extends AppCompatActivity {
         balanceOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, SquatsLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, SquatsLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -79,7 +80,7 @@ public class OutdoorActivity extends AppCompatActivity {
         squatsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, PullUpOutdoorLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, PullUpOutdoorLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -88,7 +89,7 @@ public class OutdoorActivity extends AppCompatActivity {
         pullupsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, CardioLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, CardioLibrary.class);
                 //startActivity(intent);
                 //finish();
             }
@@ -97,7 +98,7 @@ public class OutdoorActivity extends AppCompatActivity {
         cardioOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, BalanceLibrary.class);
+                //Intent intent = new Intent(OutdoorActivity.this, BalanceLibrary.class);
                 //startActivity(intent);
                 //finish();
             }

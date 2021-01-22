@@ -8,7 +8,7 @@
     android:background="@drawable/gradient_orange">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pushUpDataList"
+        android:id="@+id/recyclerIndoorDataList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
