@@ -77,7 +77,19 @@
     <string name="roll">Roll</string>
     <string name="min">Min</string>
     <string name="max">Max</string>
-    <string name="stopwatch">Stopwatch</string>
     <string name="start">start</string>
     <string name="stop">stop</string>
+    <string name="content_description_for_recyclerview">Content description for recyclerview</string>
+    <string name="textview">TextView</string>
+    <string name="incline_push_up_title">Incline Push-Up</string>
+    <string name="content_description_for_collapsing_toolbar_image">Content description for Collapsing toolbar image</string>
+    <string name="description">Description</string>
+    <string name="level">level</string>
+    <string name="muscle_group">Muscle group</string>
+    <string name="rep_randomizer">Rep Randomizer</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="description_text">Description text</string>
+    <string name="muscles_from_the_group">Muscles from the group</string>
+    <string name="leveltag">levelTag</string>
+    <string name="exercsistitletextview">exercsisTitleTextView</string>
 </resources>

@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sthenos"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Stopwatch"></activity>
+        <activity android:name=".InclinePushUp" />
+        <activity android:name=".PushUpSelection" />
+        <activity android:name=".Stopwatch" />
         <activity android:name=".RepRangeRandomizer" />
         <activity android:name=".UserProfile" />
         <activity android:name=".SignUpActivity" />
