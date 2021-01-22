@@ -14,7 +14,7 @@ import java.util.List;
 public class PushUpSelection extends AppCompatActivity implements Adapter.OnSelectionListener{
 
     //Variables
-    RecyclerView pushUpDataList;
+    RecyclerView indoorDataList;
     List<String> titles;
     List<Integer> images;
     Adapter adapter;
@@ -27,7 +27,7 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
         setContentView(R.layout.activity_selection);
 
         /*--------Hooks---------*/
-        pushUpDataList = findViewById(R.id.pushUpDataList);
+        indoorDataList = findViewById(R.id.recyclerIndoorDataList);
 
         /*--------Creating Lists---------*/
         titles = new ArrayList<>();
@@ -101,8 +101,8 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
 
         /*--------Setting the RecyclerView---------*/
-        pushUpDataList.setLayoutManager(gridLayoutManager);
-        pushUpDataList.setAdapter(adapter);
+        indoorDataList.setLayoutManager(gridLayoutManager);
+        indoorDataList.setAdapter(adapter);
 
     }
 

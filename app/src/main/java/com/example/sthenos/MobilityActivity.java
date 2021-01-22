@@ -25,7 +25,7 @@ public class MobilityActivity extends AppCompatActivity {
         upperCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MobilityActivity.this, UpperBodyLibrary.class);
+                Intent intent = new Intent(MobilityActivity.this, UpperBodySelection.class);
                 startActivity(intent);
                 //finish();
             }
@@ -34,7 +34,7 @@ public class MobilityActivity extends AppCompatActivity {
         lowerCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MobilityActivity.this, LowerBodyLibrary.class);
+                Intent intent = new Intent(MobilityActivity.this, LowerBodySelection.class);
                 startActivity(intent);
                 //finish();
             }
