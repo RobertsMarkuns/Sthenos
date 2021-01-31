@@ -1,4 +1,4 @@
-package com.example.sthenos;
+package com.example.sthenos.outdoor;
 
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -7,12 +7,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sthenos.Adapter;
+import com.example.sthenos.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class LowerBodySelection extends AppCompatActivity implements Adapter.OnSelectionListener {
+public class PlankSelection extends AppCompatActivity implements Adapter.OnSelectionListener {
+
     //Variables
-    RecyclerView mobilityDataList;
+    RecyclerView outdoorDataList;
     List<String> titles;
     List<Integer> images;
     Adapter adapter;
@@ -22,17 +26,17 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
         super.onCreate(savedInstanceState);
         //This Line will make the status bar from the screen see through
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_selection_mobility);
+        setContentView(R.layout.activity_selection_outdoor);
 
         /*--------Hooks---------*/
-        mobilityDataList = findViewById(R.id.recyclerMobilityDataList);
+        outdoorDataList = findViewById(R.id.recyclerOutdoorDataList);
 
         /*--------Creating Lists---------*/
         titles = new ArrayList<>();
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Side split stretch"); //Novice lvl
+        titles.add("Regular plank"); //Novice lvl
         //titles.add("");
 
 
@@ -48,8 +52,8 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
 
         /*--------Setting the RecyclerView---------*/
-        mobilityDataList.setLayoutManager(gridLayoutManager);
-        mobilityDataList.setAdapter(adapter);
+        outdoorDataList.setLayoutManager(gridLayoutManager);
+        outdoorDataList.setAdapter(adapter);
 
     }
 

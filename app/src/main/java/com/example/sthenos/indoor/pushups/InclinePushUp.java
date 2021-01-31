@@ -1,4 +1,4 @@
-package com.example.sthenos;
+package com.example.sthenos.indoor.pushups;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.sthenos.R;
+import com.example.sthenos.RepRangeRandomizer;
+import com.example.sthenos.Stopwatch;
 
 import static com.example.sthenos.R.drawable.inclinepushups;
 

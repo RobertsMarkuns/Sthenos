@@ -1,6 +1,5 @@
-package com.example.sthenos;
+package com.example.sthenos.mobility;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -8,10 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sthenos.Adapter;
+import com.example.sthenos.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class UpperBodySelection extends AppCompatActivity implements Adapter.OnSelectionListener {
+public class LowerBodySelection extends AppCompatActivity implements Adapter.OnSelectionListener {
     //Variables
     RecyclerView mobilityDataList;
     List<String> titles;
@@ -33,7 +35,7 @@ public class UpperBodySelection extends AppCompatActivity implements Adapter.OnS
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Neck and Abs extensions"); //Novice lvl
+        titles.add("Side split stretch"); //Novice lvl
         //titles.add("");
 
 

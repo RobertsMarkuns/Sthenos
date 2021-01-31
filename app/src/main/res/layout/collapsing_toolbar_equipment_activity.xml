@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_red_black_underglow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true" >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/colapsingToolBarTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_black_red_underglow"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_description_for_collapsing_toolbar_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/userprofile"
+                app:layout_collapseMode="parallax" />
+
+            <Toolbar
+                android:id="@+id/toolBarForCollapsingToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        android:padding="30dp"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/exercsistitletextview"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/priceTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/priceTagTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/pricetag"
+                android:textAllCaps="true"
+                android:textColor="@color/red_500"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ratingTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/ratingDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/ratingTag"
+                android:textColor="@color/black"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/productDescriptionTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/productDescriptionTextTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/description_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_app"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/add_to_cart"
+                    android:drawableEnd="@drawable/ic_baseline_shopping_cart_24"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

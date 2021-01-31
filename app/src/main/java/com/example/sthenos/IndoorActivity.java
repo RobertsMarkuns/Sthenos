@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sthenos.indoor.pushups.PushUpSelection;
+
 public class IndoorActivity extends AppCompatActivity {
 
-    //variables
+    //Variables
     CardView pushupIndoorCardView, weightsCardView, absIndoorCardView,
             jumpIndoorCardView, squatsIndoorCardView, pullupsIndoorCardView,
             cardioInddorCardView, balanceIndoorCardView;

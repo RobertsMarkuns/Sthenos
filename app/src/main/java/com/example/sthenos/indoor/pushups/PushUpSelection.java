@@ -1,4 +1,4 @@
-package com.example.sthenos;
+package com.example.sthenos.indoor.pushups;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -8,10 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import com.example.sthenos.Adapter;
+import com.example.sthenos.R;
+import com.example.sthenos.indoor.pushups.InclinePushUp;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PushUpSelection extends AppCompatActivity implements Adapter.OnSelectionListener{
+public class PushUpSelection extends AppCompatActivity implements Adapter.OnSelectionListener {
 
     //Variables
     RecyclerView indoorDataList;
