@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sthenos.outdoor.PlankSelection;
+
 public class OutdoorActivity extends AppCompatActivity {
 
     //variables

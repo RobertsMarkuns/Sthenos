@@ -12,16 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sthenos"
         android:usesCleartextTraffic="true">
-        <activity android:name=".InclinePushUp" />
-        <activity android:name=".PushUpSelection" />
+        <activity android:name=".equipment.ParalletteBars"/>
+        <activity android:name=".equipment.PullUpBar"/>
+        <activity android:name=".equipment.Resistancebands"/>
+        <activity android:name=".equipment.WeightVest"/>
+        <activity android:name=".equipment.WristWraps"/>
+        <activity android:name=".indoor.pushups.InclinePushUp" />
+        <activity android:name=".indoor.pushups.PushUpSelection" />
         <activity android:name=".Stopwatch" />
         <activity android:name=".RepRangeRandomizer" />
         <activity android:name=".UserProfile" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".UpperBodySelection"/>
-        <activity android:name=".LowerBodySelection"/>
-        <activity android:name=".PlankSelection"/>
+        <activity android:name=".mobility.UpperBodySelection"/>
+        <activity android:name=".mobility.LowerBodySelection"/>
+        <activity android:name=".outdoor.PlankSelection"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

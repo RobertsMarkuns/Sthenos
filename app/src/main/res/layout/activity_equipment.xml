@@ -1,9 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Equipment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/equipmentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pullUpBarCardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_black_red_underglow">
+
+                    <ImageView
+                        android:id="@+id/pullUpBarImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:srcCompat="@drawable/homepullupbarsthenos"
+                        android:contentDescription="@string/description"/>
+
+                    <TextView
+                        android:id="@+id/pullUpBarTextView"
+                        android:layout_width="175dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/pullUpBarImageView"
+                        android:fontFamily="@font/rubik_bold_italic"
+                        android:textSize="20sp"
+                        android:text="@string/home_pull_up_bars"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paralletteBarsCardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_black_red_underglow">
+
+                    <ImageView
+                        android:id="@+id/parallettesImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/description"
+                        app:srcCompat="@drawable/parallettessthenos" />
+
+                    <TextView
+                        android:id="@+id/parallettesTextView"
+                        android:layout_width="175dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/parallettesImageView"
+                        android:fontFamily="@font/rubik_bold_italic"
+                        android:textSize="20sp"
+                        android:text="@string/parallettes"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resistancebandsCardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_black_red_underglow">
+
+                    <ImageView
+                        android:id="@+id/resistancebandsImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/description"
+                        app:srcCompat="@drawable/resistancebands1" />
+
+                    <TextView
+                        android:id="@+id/resistancebandsTextView"
+                        android:layout_width="175dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/resistancebandsImageView"
+                        android:fontFamily="@font/rubik_bold_italic"
+                        android:textSize="20sp"
+                        android:text="@string/resistancebands"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/weightVestCardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_black_red_underglow">
+
+                    <ImageView
+                        android:id="@+id/weightVestImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/description"
+                        app:srcCompat="@drawable/weightveststhenos" />
+
+                    <TextView
+                        android:id="@+id/weightVestTextView"
+                        android:layout_width="175dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/weightVestImageView"
+                        android:fontFamily="@font/rubik_bold_italic"
+                        android:textSize="20sp"
+                        android:text="@string/weight_vest"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wristWrapsCardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_black_red_underglow">
+
+                    <ImageView
+                        android:id="@+id/wristWrapsImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/description"
+                        app:srcCompat="@drawable/wristwraps" />
+
+                    <TextView
+                        android:id="@+id/wristWrapsTextView"
+                        android:layout_width="175dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/wristWrapsImageView"
+                        android:fontFamily="@font/rubik_bold_italic"
+                        android:textSize="20sp"
+                        android:text="@string/wrist_wraps"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

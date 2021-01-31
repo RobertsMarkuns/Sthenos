@@ -64,9 +64,9 @@
     <string name="welcome_back">Welcome!</string>
     <string name="login_to_continue">Login to continue</string>
     <string name="login_image_description">Login image description</string>
-    <string name="sign_up_to_start_your_strenght_journey">Sign up to start your strenght journey</string>
+    <string name="sign_up_to_start_your_strenght_journey">Sign up to start your strength journey</string>
     <string name="phone_number">Phone Number</string>
-    <string name="userprofileimage_descripton">userProfileImage Descripton</string>
+    <string name="userprofileimage_descripton">userProfileImage Description</string>
     <string name="longestworkouttimetext">3:00:57</string>
     <string name="longest_workout_time">Longest workout time</string>
     <string name="pb_rep_range">30 dips</string>
@@ -92,4 +92,14 @@
     <string name="muscles_from_the_group">Muscles from the group</string>
     <string name="leveltag">levelTag</string>
     <string name="exercsistitletextview">exercsisTitleTextView</string>
+    <string name="home_pull_up_bars">Home Pull Up Bars</string>
+    <string name="parallettes">Parallettes</string>
+    <string name="resistancebands">Resistancebands</string>
+    <string name="weight_vest">Weight vest</string>
+    <string name="wrist_wraps">Wrist wraps</string>
+    <string name="price">Price</string>
+    <string name="pricetag">priceTag</string>
+    <string name="rating">Rating</string>
+    <string name="ratingTag">4 out of 5 stars</string>
+    <string name="add_to_cart">Add To Cart</string>
 </resources>

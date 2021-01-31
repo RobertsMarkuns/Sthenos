@@ -19,7 +19,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    //variables
+    //Variables
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         outdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, OutdoorActivity.class);
+                Intent intent = new Intent(MainActivity.this, IndoorActivity.class);
                 startActivity(intent);
                 //finish();
             }
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         indoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, IndoorActivity.class);
+                Intent intent = new Intent(MainActivity.this, OutdoorActivity.class);
                 startActivity(intent);
                 //finish();
             }
@@ -124,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_equipment:
                 Intent equipment = new Intent(MainActivity.this,Equipment.class);
                 startActivity(equipment);
+                break;
+            case R.id.nav_profile:
+                Intent profile = new Intent(MainActivity.this, UserProfile.class);
+                startActivity(profile);
                 break;
         }
 

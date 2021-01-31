@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sthenos.mobility.LowerBodySelection;
+import com.example.sthenos.mobility.UpperBodySelection;
+
 public class MobilityActivity extends AppCompatActivity {
 
     //variables
