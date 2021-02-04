@@ -172,4 +172,19 @@
         app:layout_anchorGravity="bottom|end" />
 
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_navbar"
+        android:layout_margin="30dp"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:itemIconTint="@drawable/bottom_nav_item_selector"/>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
