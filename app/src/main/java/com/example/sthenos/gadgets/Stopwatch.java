@@ -1,4 +1,4 @@
-package com.example.sthenos;
+package com.example.sthenos.gadgets;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.sthenos.R;
 
 public class Stopwatch extends AppCompatActivity {
 

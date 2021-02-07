@@ -13,7 +13,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
+import com.example.sthenos.database.SignUpActivity;
+import com.example.sthenos.database.UserProfile;
+import com.example.sthenos.notification.NotificantonActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -128,6 +132,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_profile:
                 Intent profile = new Intent(MainActivity.this, UserProfile.class);
                 startActivity(profile);
+                break;
+            case R.id.nav_logout:
+                Intent logout = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(logout);
+                finish();
+                break;
+            case R.id.nav_notification:
+                Intent notification = new Intent(MainActivity.this, NotificantonActivity.class);
+                startActivity(notification);
+                break;
+            case R.id.nav_share:
+                Toast.makeText(getApplicationContext(),"Link saved to clipboard",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_rate:
+                Toast.makeText(getApplicationContext(),"Thank you for rating us!",Toast.LENGTH_SHORT).show();
                 break;
         }
 

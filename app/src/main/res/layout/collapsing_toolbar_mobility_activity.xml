@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiant_red_black_underglow">
+    android:background="@color/red_700">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppBarTemplate"
@@ -16,14 +16,14 @@
             android:id="@+id/colapsingToolBarTemplate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gradient_black_red_underglow"
+            android:background="@color/red_700"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
 
 
             <ImageView
-                android:id="@+id/productImageView"
+                android:id="@+id/imageViewForCollapsingToolBar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -58,7 +58,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/productTitleTextView"
+                android:id="@+id/exerciseTitleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_bold"
@@ -69,49 +69,27 @@
                 android:layout_marginTop="10dp"/>
 
             <TextView
-                android:id="@+id/priceTitleTextView"
+                android:id="@+id/muscleGroupTitleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_bold"
-                android:text="@string/price"
-                android:textColor="@color/black"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:layout_marginTop="20dp"/>
-
-
-            <TextView
-                android:id="@+id/priceTagTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/rubik_medium"
-                android:text="@string/pricetag"
-                android:textAllCaps="true"
-                android:textColor="@color/red_700"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/ratingTitleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/rubik_bold"
-                android:text="@string/rating"
+                android:text="@string/muscle_group"
                 android:textColor="@color/black"
                 android:textAllCaps="true"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/ratingDescTextView"
+                android:id="@+id/muscleGroupDescTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_medium"
-                android:text="@string/ratingTag"
+                android:text="@string/muscles_from_the_group"
                 android:textColor="@color/black"
                 android:textAllCaps="true" />
 
             <TextView
-                android:id="@+id/productDescriptionTitleTextView"
+                android:id="@+id/descriptionTitleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_bold"
@@ -122,7 +100,7 @@
                 android:layout_marginTop="20dp"/>
 
             <TextView
-                android:id="@+id/productDescriptionTextTextView"
+                android:id="@+id/descriptionTextTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_medium"
@@ -132,24 +110,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="50dp">
 
                 <Button
-                    android:id="@+id/btnAddToCart"
-                    android:layout_width="0dp"
+                    android:id="@+id/btnStopWatch"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_black"
+                    android:background="@drawable/btn_red"
                     android:fontFamily="@font/rubik_medium"
                     android:textColor="@color/white"
-                    android:text="@string/add_to_cart"
-                    android:drawableEnd="@drawable/ic_baseline_shopping_cart_24"/>
-
-
+                    android:text="@string/stopwatch" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:contentDescription="@string/content_description_for_collapsing_toolbar_image"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:fabSize="normal"
+        app:layout_anchor="@id/AppBarTemplate"
+        app:layout_anchorGravity="bottom|end" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottomNavBar"
@@ -164,4 +153,6 @@
         app:itemIconSize="30dp"
         app:itemRippleColor="@android:color/transparent"
         app:itemIconTint="@drawable/bottom_nav_item_selector"/>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

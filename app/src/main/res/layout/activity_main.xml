@@ -178,7 +178,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/gradient_skylineblue">
+                    android:background="@drawable/gradient_black_red_underglow">
 
                     <TextView
                         android:id="@+id/equipmentTextView"

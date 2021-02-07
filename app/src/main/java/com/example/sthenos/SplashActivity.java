@@ -11,6 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.sthenos.database.LoginActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 5000;

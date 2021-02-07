@@ -12,21 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sthenos"
         android:usesCleartextTraffic="true">
-        <activity android:name=".equipment.ParalletteBars"/>
-        <activity android:name=".equipment.PullUpBar"/>
-        <activity android:name=".equipment.Resistancebands"/>
-        <activity android:name=".equipment.WeightVest"/>
-        <activity android:name=".equipment.WristWraps"/>
+        <activity android:name=".notification.NotificantonActivity"/>
+        <activity android:name=".equipment.ParalletteBars" />
+        <activity android:name=".equipment.PullUpBar" />
+        <activity android:name=".equipment.Resistancebands" />
+        <activity android:name=".equipment.WeightVest" />
+        <activity android:name=".equipment.WristWraps" />
         <activity android:name=".indoor.pushups.InclinePushUp" />
         <activity android:name=".indoor.pushups.PushUpSelection" />
-        <activity android:name=".Stopwatch" />
-        <activity android:name=".RepRangeRandomizer" />
-        <activity android:name=".UserProfile" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".mobility.UpperBodySelection"/>
-        <activity android:name=".mobility.LowerBodySelection"/>
-        <activity android:name=".outdoor.PlankSelection"/>
+        <activity android:name=".gadgets.Stopwatch" />
+        <activity android:name=".gadgets.RepRangeRandomizer" />
+        <activity android:name=".database.UserProfile" />
+        <activity android:name=".database.SignUpActivity" />
+        <activity android:name=".database.LoginActivity" />
+        <activity android:name=".mobility.UpperBodySelection" />
+        <activity android:name=".mobility.LowerBodySelection" />
+        <activity android:name=".outdoor.plank.PlankSelection" />
+        <activity android:name=".outdoor.pushups.PushUpSelectionOutdoor" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +41,8 @@
         <activity android:name=".OutdoorActivity" />
         <activity android:name=".MobilityActivity" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".notification.AlertReceiver" />
 
         <meta-data
             android:name="preloaded_fonts"
