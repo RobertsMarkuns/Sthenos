@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/reminderTitleDescTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="75dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/black"
+        android:text="@string/set_a_reminder_to_get_up_and_move_while_working_to_stay_active"/>
+
+    <TextView
+        android:id="@+id/reminderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="75dp"
+        android:layout_gravity="center"
+        android:text="@string/no_alarm_set"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/btn_purple"
+        android:text="@string/open_time_picker"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnCancelReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/btn_purple"
+        android:text="@string/cancel_alarm"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_navbar"
+        android:layout_margin="30dp"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:itemIconTint="@drawable/bottom_nav_item_selector"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
