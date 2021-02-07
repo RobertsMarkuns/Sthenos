@@ -7,7 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.sthenos.outdoor.PlankSelection;
+import com.example.sthenos.outdoor.plank.PlankSelection;
+import com.example.sthenos.outdoor.pushups.PushUpSelectionOutdoor;
 
 public class OutdoorActivity extends AppCompatActivity {
 
@@ -37,8 +38,8 @@ public class OutdoorActivity extends AppCompatActivity {
         pushupsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, PushUpLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, PushUpSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });

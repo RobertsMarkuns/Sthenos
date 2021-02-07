@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red_500">
+    android:background="@color/green">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppBarTemplate"
@@ -16,7 +16,7 @@
             android:id="@+id/colapsingToolBarTemplate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/red_500"
+            android:background="@color/green"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_rounded_app"
+                    android:background="@drawable/btn_green"
                     android:fontFamily="@font/rubik_medium"
                     android:text="@string/rep_randomizer" />
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_rounded_app"
+                    android:background="@drawable/btn_green"
                     android:fontFamily="@font/rubik_medium"
                     android:text="@string/stopwatch" />
             </LinearLayout>

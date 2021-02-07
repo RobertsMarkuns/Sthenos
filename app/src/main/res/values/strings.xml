@@ -102,4 +102,9 @@
     <string name="rating">Rating</string>
     <string name="ratingTag">4 out of 5 stars</string>
     <string name="add_to_cart">Add To Cart</string>
+    <string name="notificaton">Notificaton</string>
+    <string name="no_alarm_set">No Alarm set</string>
+    <string name="open_time_picker">Open time picker</string>
+    <string name="cancel_alarm">cancel alarm</string>
+    <string name="set_a_reminder_to_get_up_and_move_while_working_to_stay_active">Set a reminder to get up and move while working to stay active!</string>
 </resources>

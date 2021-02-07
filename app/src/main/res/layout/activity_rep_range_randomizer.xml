@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RepRangeRandomizer"
+    tools:context=".gadgets.RepRangeRandomizer"
     android:padding="10dp">
 
     <LinearLayout
@@ -176,7 +176,7 @@
         android:id="@+id/btnRoll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_rounded_app"
+        android:background="@drawable/btn_red"
         android:fontFamily="@font/rubik_medium"
         android:text="@string/roll"
         android:textColor="@color/white"

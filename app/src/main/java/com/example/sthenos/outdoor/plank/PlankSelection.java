@@ -1,4 +1,4 @@
-package com.example.sthenos.outdoor;
+package com.example.sthenos.outdoor.plank;
 
 import android.os.Bundle;
 import android.view.WindowManager;

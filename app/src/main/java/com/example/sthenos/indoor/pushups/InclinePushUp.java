@@ -19,9 +19,8 @@ import com.example.sthenos.MainActivity;
 import com.example.sthenos.MobilityActivity;
 import com.example.sthenos.OutdoorActivity;
 import com.example.sthenos.R;
-import com.example.sthenos.RepRangeRandomizer;
-import com.example.sthenos.Stopwatch;
-import com.example.sthenos.UserProfile;
+import com.example.sthenos.gadgets.RepRangeRandomizer;
+import com.example.sthenos.gadgets.Stopwatch;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import static com.example.sthenos.R.drawable.inclinepushups;
@@ -37,7 +36,7 @@ public class InclinePushUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapsing_toolbar_activity);
+        setContentView(R.layout.collapsing_toolbar_indoor_activity);
 
         /*--------Hooks---------*/
         //Image
