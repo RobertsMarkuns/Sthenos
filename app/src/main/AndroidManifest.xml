@@ -26,8 +26,14 @@
         <activity android:name=".database.SignUpActivity" />
         <activity android:name=".database.LoginActivity" />
         <activity android:name=".mobility.UpperBodySelection" />
+        <activity android:name=".mobility.upperbody.NeckStretch"/>
+        <activity android:name=".mobility.upperbody.ShoulderMobility"/>
+        <activity android:name=".mobility.upperbody.PalmStretch"/>
+        <activity android:name=".mobility.upperbody.WristStretch"/>
+        <activity android:name=".mobility.upperbody.SideStretch"/>
         <activity android:name=".mobility.LowerBodySelection" />
         <activity android:name=".outdoor.plank.PlankSelection" />
+        <activity android:name=".outdoor.plank.RegularPlank"/>
         <activity android:name=".outdoor.pushups.PushUpSelectionOutdoor" />
         <activity android:name=".SplashActivity">
             <intent-filter>
