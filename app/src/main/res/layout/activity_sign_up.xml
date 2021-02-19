@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".database.SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,8 +15,8 @@
 
     <ImageView
         android:id="@+id/logoSignUpImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/login_image_description"
         android:src="@drawable/logo_sthenos_white"
         android:transitionName="logoAnim"/>
@@ -37,11 +37,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_medium_italic"
         android:text="@string/sign_up_to_start_your_strenght_journey"
-        android:textColor="@color/red_200"
+        android:textColor="@color/red_700"
         android:textSize="18sp"
         android:transitionName="subTextAnim"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -67,6 +67,7 @@
             android:id="@+id/emailSignUpLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameSignUpLayout"
             android:hint="@string/email"
             android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -82,6 +83,7 @@
             android:id="@+id/usernameSignUpLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/emailSignUpLayout"
             android:hint="@string/username"
             android:transitionName="userAnim"
             app:counterMaxLength="20"
@@ -99,6 +101,7 @@
             android:id="@+id/passwordSignUpLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameSignUpLayout"
             android:hint="@string/password"
             android:layout_marginTop="20dp"
             app:passwordToggleEnabled="true"
@@ -116,24 +119,47 @@
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/signup"
-            android:background="@drawable/btn_rounded"
             android:layout_marginTop="30dp"
-            android:transitionName="btnAnim"/>
+            android:layout_below="@id/passwordSignUpLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_red"
+            android:text="@string/signup"
+            android:transitionName="btnAnim"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/btnLoginHere"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_below="@+id/btnSignUp"
             android:text="@string/loginhere"
             android:textColor="@color/black"
             android:background="#00000000"
             android:fontFamily="@font/rubik"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:transitionName="logSignAnim"/>
 
-    </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/progressBarSignUpLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/progress_bar_bg"
+            android:elevation="8dp"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/progressBarSignUp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
     </LinearLayout>
 
