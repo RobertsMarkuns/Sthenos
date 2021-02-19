@@ -23,7 +23,6 @@ import com.example.sthenos.MainActivity;
 import com.example.sthenos.MobilityActivity;
 import com.example.sthenos.OutdoorActivity;
 import com.example.sthenos.R;
-import com.example.sthenos.indoor.pushups.InclinePushUp;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.DateFormat;

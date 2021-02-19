@@ -35,6 +35,8 @@
         <activity android:name=".outdoor.plank.PlankSelection" />
         <activity android:name=".outdoor.plank.RegularPlank"/>
         <activity android:name=".outdoor.pushups.PushUpSelectionOutdoor" />
+        <activity android:name=".todo.AddModifyTask" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".todo.ToDoActivity"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +51,7 @@
         <activity android:name=".MainActivity" />
 
         <receiver android:name=".notification.AlertReceiver" />
+        <receiver android:name=".todo.AlertReceiverToDoList"/>
 
         <meta-data
             android:name="preloaded_fonts"

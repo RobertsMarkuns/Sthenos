@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.sthenos.database.SignUpActivity;
 import com.example.sthenos.database.UserProfile;
 import com.example.sthenos.notification.NotificantonActivity;
+import com.example.sthenos.todo.ToDoActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         setContentView(R.layout.activity_main);
 
-        /*--------Hooks---------*/
+        /*---------------------------Hooks------------------------------------------------*/
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
@@ -46,10 +47,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         indoorCardView = findViewById(R.id.indoorCardView);
         equipmentCardView = findViewById(R.id.equipmentCardView);
 
-        /*--------Toolbar---------*/
+        /*--------------------------Toolbar----------------------------------------------*/
         setSupportActionBar(toolbar);
 
-        /*--------Navigation Drawer Menu---------*/
+        /*---------------------Navigation Drawer Menu-----------------------------------*/
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView.setCheckedItem(R.id.nav_home);
 
-        /*---------CardView onClickListener--------------*/
+        /*--------------------CardView onClickListener----------------------------------*/
         mobilityCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    /*---------------------------------Navigation-------------------------------------------*/
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -135,14 +137,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent profile = new Intent(MainActivity.this, UserProfile.class);
                 startActivity(profile);
                 break;
+            case R.id.nav_notification:
+                Intent notification = new Intent(MainActivity.this, NotificantonActivity.class);
+                startActivity(notification);
+                break;
+            case R.id.nav_todo:
+                Intent todo = new Intent(MainActivity.this, ToDoActivity.class);
+                startActivity(todo);
+                break;
             case R.id.nav_logout:
                 Intent logout = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(logout);
                 finish();
-                break;
-            case R.id.nav_notification:
-                Intent notification = new Intent(MainActivity.this, NotificantonActivity.class);
-                startActivity(notification);
                 break;
             case R.id.nav_share:
                 Toast.makeText(getApplicationContext(),"Link saved to clipboard",Toast.LENGTH_SHORT).show();

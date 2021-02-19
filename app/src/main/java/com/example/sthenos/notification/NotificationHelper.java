@@ -16,27 +16,40 @@ public class NotificationHelper extends ContextWrapper {
     public static final String channelID = "channelID";
     public static final String channelName = "Channel Name";
     private NotificationManager mManager;
+
+
     public NotificationHelper(Context base) {
         super(base);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             createChannel();
         }
     }
+
     @TargetApi(Build.VERSION_CODES.O)
     private void createChannel() {
         NotificationChannel channel = new NotificationChannel(channelID, channelName, NotificationManager.IMPORTANCE_HIGH);
         getManager().createNotificationChannel(channel);
     }
+
     public NotificationManager getManager() {
         if (mManager == null) {
             mManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         }
         return mManager;
     }
+
     public NotificationCompat.Builder getChannelNotification() {
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("Reminder")
                 .setContentText("Get up and move")
                 .setSmallIcon(R.drawable.mobility);
+    }
+
+    public NotificationCompat.Builder getChannelNotificationToDoList(){
+        return new NotificationCompat.Builder(getApplicationContext(), channelID)
+                .setContentTitle("ToDos due Today")
+                .setContentText("You have some ToDos due today!")
+                .setSmallIcon(R.drawable.mobility);
+
     }
 }
