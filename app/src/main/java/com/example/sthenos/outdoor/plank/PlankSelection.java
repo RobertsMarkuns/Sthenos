@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.plank;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -41,7 +42,7 @@ public class PlankSelection extends AppCompatActivity implements Adapter.OnSelec
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.ic_name);
+        images.add(R.drawable.regularplank);
         //images.add();
 
 
@@ -61,8 +62,8 @@ public class PlankSelection extends AppCompatActivity implements Adapter.OnSelec
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
-                //Intent incline = new Intent(this, InclinePushUp.class);
-                //startActivity(incline);
+                Intent regular = new Intent(this, RegularPlank.class);
+                startActivity(regular);
                 break;
 
         }

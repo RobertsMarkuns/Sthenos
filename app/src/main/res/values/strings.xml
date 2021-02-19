@@ -107,4 +107,22 @@
     <string name="open_time_picker">Open time picker</string>
     <string name="cancel_alarm">cancel alarm</string>
     <string name="set_a_reminder_to_get_up_and_move_while_working_to_stay_active">Set a reminder to get up and move while working to stay active!</string>
+    <string name="new_task">New Task</string>
+    <string name="what_are_you_planning">What are you planning?</string>
+    <string name="day_month_year">16/02/2021</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="save">SAVE</string>
+    <string name="task_name">Task Name</string>
+    <string name="todo_list">ToDo List</string>
+    <string name="today_s_tasks">Today\'s Tasks</string>
+    <string name="tomorrow_s_tasks">Tomorrow\'s Tasks</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="hey">Hey</string>
+    <string name="you_are_nfree_today">you are free today</string>
+    <string name="you_have_no_task_to_do_today">You have no task to do today</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="add_task">Add Task</string>
+    <string name="todo">TODO</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="cancel_reminder">Cancel Reminder</string>
 </resources>
