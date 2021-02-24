@@ -117,6 +117,106 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
                 Intent incline = new Intent(this, InclinePushUp.class);
                 startActivity(incline);
                 break;
+            case 1:
+                Intent knee = new Intent(this, KneePushUp.class);
+                startActivity(knee);
+                break;
+            case 2:
+                Intent regular = new Intent(this, RegularPushUp.class);
+                startActivity(regular);
+                break;
+            case 3:
+                Intent decline = new Intent(this, DeclinePushUp.class);
+                startActivity(decline);
+                break;
+            case 4:
+                Intent diamond = new Intent(this, DiamondPushUp.class);
+                startActivity(diamond);
+                break;
+            case 5:
+                Intent deeppbar = new Intent(this, DeepPbarPushUp.class);
+                startActivity(deeppbar);
+                break;
+            case 6:
+                Intent slow = new Intent(this, SlowPushUp.class);
+                startActivity(slow);
+                break;
+            case 7:
+                Intent explosivepushup = new Intent(this, ExplosiveClapPushUp.class);
+                startActivity(explosivepushup);
+                break;
+            case 8:
+                Intent pike = new Intent(this, PikePushUp.class);
+                startActivity(pike);
+                break;
+            case 9:
+                Intent archerpushup = new Intent(this, ArcherPushUps.class);
+                startActivity(archerpushup);
+                break;
+            case 10:
+                Intent pseudopushup = new Intent(this, PseudoPushUp.class);
+                startActivity(pseudopushup);
+                break;
+            case 11:
+                Intent widepseudo = new Intent(this, WidePseudoPushUps.class);
+                startActivity(widepseudo);
+                break;
+            case 12:
+                Intent wahspu = new Intent(this, WAHandstandPushUp.class);
+                startActivity(wahspu);
+                break;
+            case 13:
+                Intent backclap = new Intent(this, BackClapPushUp.class);
+                startActivity(backclap);
+                break;
+            case 14:
+                Intent superman = new Intent(this, SupermanPushUp.class);
+                startActivity(superman);
+                break;
+            case 15:
+                Intent onearm = new Intent(this, OneArmPushUp.class);
+                startActivity(onearm);
+                break;
+            case 16:
+                Intent tuck = new Intent(this, TuckPlanchePushUp.class);
+                startActivity(tuck);
+                break;
+            case 17:
+                Intent hspu = new Intent(this, HandstandPushUp.class);
+                startActivity(hspu);
+                break;
+            case 18:
+                Intent deephspu = new Intent(this, DeepHSPU.class);
+                startActivity(deephspu);
+                break;
+            case 19:
+                Intent claphspu = new Intent(this, ClapHSPU.class);
+                startActivity(claphspu);
+                break;
+            case 20:
+                Intent ninty = new Intent(this, NintyDegreeHSPU.class);
+                startActivity(ninty);
+                break;
+            case 21:
+                Intent straddle = new Intent(this, StraddlePlanchePushUp.class);
+                startActivity(straddle);
+                break;
+            case 22:
+                Intent fullplanche = new Intent( this, FullPlanchePushUp.class );
+                startActivity(fullplanche);
+                break;
+            case 23:
+                Intent fullarcher = new Intent(this, ArcherFullPlanchePushUp.class);
+                startActivity(fullarcher);
+                break;
+            case 24:
+                Intent fullplancheftg = new Intent(this, FullPlanchePushUpFTG.class);
+                startActivity(fullplancheftg);
+                break;
+            case 25:
+                Intent deepfullplanche = new Intent(this, DeepFullPlanchePushUp.class);
+                startActivity(deepfullplanche);
+                break;
 
         }
     }

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
-import com.example.sthenos.indoor.pushups.InclinePushUp;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ import java.util.List;
 public class PushUpSelectionOutdoor extends AppCompatActivity implements Adapter.OnSelectionListener {
 
     //Variables
-    RecyclerView indoorDataList;
+    RecyclerView outdoorDataList;
     List<String> titles;
     List<Integer> images;
     Adapter adapter;
@@ -31,7 +31,7 @@ public class PushUpSelectionOutdoor extends AppCompatActivity implements Adapter
         setContentView(R.layout.activity_selection_outdoor);
 
         /*--------Hooks---------*/
-        indoorDataList = findViewById(R.id.recyclerIndoorDataList);
+        outdoorDataList = findViewById(R.id.recyclerOutdoorDataList);
 
         /*--------Creating Lists---------*/
         titles = new ArrayList<>();
@@ -105,8 +105,8 @@ public class PushUpSelectionOutdoor extends AppCompatActivity implements Adapter
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
 
         /*--------Setting the RecyclerView---------*/
-        indoorDataList.setLayoutManager(gridLayoutManager);
-        indoorDataList.setAdapter(adapter);
+        outdoorDataList.setLayoutManager(gridLayoutManager);
+        outdoorDataList.setAdapter(adapter);
 
     }
 
@@ -114,8 +114,108 @@ public class PushUpSelectionOutdoor extends AppCompatActivity implements Adapter
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
-                Intent incline = new Intent(this, InclinePushUp.class);
+                Intent incline = new Intent(this, InclinePushUpOutdoor.class);
                 startActivity(incline);
+                break;
+            case 1:
+                Intent knee = new Intent(this, KneePushUpOutdoor.class);
+                startActivity(knee);
+                break;
+            case 2:
+                Intent regular = new Intent(this, RegularPushUpOutdoor.class);
+                startActivity(regular);
+                break;
+            case 3:
+                Intent decline = new Intent(this, DeclinePushUpOutdoor.class);
+                startActivity(decline);
+                break;
+            case 4:
+                Intent diamond = new Intent(this, DiamondPushUpOutdoor.class);
+                startActivity(diamond);
+                break;
+            case 5:
+                Intent deeppbar = new Intent(this, DeepPbarPushUpOutdoor.class);
+                startActivity(deeppbar);
+                break;
+            case 6:
+                Intent slow = new Intent(this, SlowPushUpOutdoor.class);
+                startActivity(slow);
+                break;
+            case 7:
+                Intent explosivepushup = new Intent(this, ExploClapPushUpOutdoor.class);
+                startActivity(explosivepushup);
+                break;
+            case 8:
+                Intent pike = new Intent(this, PikePushUpOutdoor.class);
+                startActivity(pike);
+                break;
+            case 9:
+                Intent archerpushup = new Intent(this, ArchPushUpOutdoor.class);
+                startActivity(archerpushup);
+                break;
+            case 10:
+                Intent pseudopushup = new Intent(this, PseudoPushUpOutdoor.class);
+                startActivity(pseudopushup);
+                break;
+            case 11:
+                Intent widepseudo = new Intent(this, WidePseudoPushUpOutdoor.class);
+                startActivity(widepseudo);
+                break;
+            case 12:
+                Intent wahspu = new Intent(this, WAHSPUOutdoor.class);
+                startActivity(wahspu);
+                break;
+            case 13:
+                Intent backclap = new Intent(this, BackClapPushUpOutdoor.class);
+                startActivity(backclap);
+                break;
+            case 14:
+                Intent superman = new Intent(this, SupermanPushUpOutdoor.class);
+                startActivity(superman);
+                break;
+            case 15:
+                Intent onearm = new Intent(this, OneArmPushUpOutdoor.class);
+                startActivity(onearm);
+                break;
+            case 16:
+                Intent tuck = new Intent(this, TuckPlanchePushUpOutdoor.class);
+                startActivity(tuck);
+                break;
+            case 17:
+                Intent hspu = new Intent(this, HSPUOutdoor.class);
+                startActivity(hspu);
+                break;
+            case 18:
+                Intent deephspu = new Intent(this, DeepHSPUOutdoor.class);
+                startActivity(deephspu);
+                break;
+            case 19:
+                Intent claphspu = new Intent(this, ClapHSPUOutdoor.class);
+                startActivity(claphspu);
+                break;
+            case 20:
+                Intent ninty = new Intent(this, NintyDegHSPUOutdoor.class);
+                startActivity(ninty);
+                break;
+            case 21:
+                Intent straddle = new Intent(this, StraddlePlanchePushUpOutdoor.class);
+                startActivity(straddle);
+                break;
+            case 22:
+                Intent fullplanche = new Intent( this, FulPlanchePushUpOutdoor.class );
+                startActivity(fullplanche);
+                break;
+            case 23:
+                Intent fullarcher = new Intent(this, ArchFullPlanchePushUpOutdoor.class);
+                startActivity(fullarcher);
+                break;
+            case 24:
+                Intent fullplancheftg = new Intent(this, FulPlanchPushFTGOutdoor.class);
+                startActivity(fullplancheftg);
+                break;
+            case 25:
+                Intent deepfullplanche = new Intent(this, DeepFullPlanchePushUpOutdoor.class);
+                startActivity(deepfullplanche);
                 break;
 
         }

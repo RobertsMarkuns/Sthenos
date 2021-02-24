@@ -7,8 +7,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sthenos.indoor.squats.SquatSelection;
+import com.example.sthenos.outdoor.abs.AbSelectionOutdoor;
+import com.example.sthenos.outdoor.balance.BalanceSelectionOutdoor;
+import com.example.sthenos.outdoor.cardio.CardioSelectionOutdoor;
+import com.example.sthenos.outdoor.jump.JumpSelectionOutdoor;
 import com.example.sthenos.outdoor.plank.PlankSelection;
+import com.example.sthenos.outdoor.pullups.PullUpSelectionOutdoor;
 import com.example.sthenos.outdoor.pushups.PushUpSelectionOutdoor;
+import com.example.sthenos.outdoor.squats.SquatSelectionOutdoor;
 
 public class OutdoorActivity extends AppCompatActivity {
 
@@ -22,7 +29,7 @@ public class OutdoorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_outdoor);
 
 
-        /*--------Hooks---------*/
+        /*---------------------------Hooks--------------------------------------*/
         pushupsOutdoorCardView = findViewById(R.id.PushUpOutdoorCardView);
         plankCardView = findViewById(R.id.PlankCardView);
         absOutdoorCardView = findViewById(R.id.AbsOutdoorCardView);
@@ -33,7 +40,7 @@ public class OutdoorActivity extends AppCompatActivity {
         cardioOutdoorCardView = findViewById(R.id.CardioOutdoorCardView);
 
 
-        /*---------CardView onClickListener--------------*/
+        /*--------------------CardView onClickListener----------------------------*/
 
         pushupsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +63,8 @@ public class OutdoorActivity extends AppCompatActivity {
         absOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, AbsLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, AbSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -65,8 +72,8 @@ public class OutdoorActivity extends AppCompatActivity {
         jumpOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, JumpLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, JumpSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -74,8 +81,8 @@ public class OutdoorActivity extends AppCompatActivity {
         balanceOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, SquatsLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, BalanceSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -83,8 +90,8 @@ public class OutdoorActivity extends AppCompatActivity {
         squatsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, PullUpOutdoorLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, SquatSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -92,8 +99,8 @@ public class OutdoorActivity extends AppCompatActivity {
         pullupsOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, CardioLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, PullUpSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -101,14 +108,11 @@ public class OutdoorActivity extends AppCompatActivity {
         cardioOutdoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(OutdoorActivity.this, BalanceLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(OutdoorActivity.this, CardioSelectionOutdoor.class);
+                startActivity(intent);
                 //finish();
             }
         });
 
-
-
     }
-
 }

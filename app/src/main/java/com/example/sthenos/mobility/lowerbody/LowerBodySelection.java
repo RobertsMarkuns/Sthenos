@@ -1,6 +1,5 @@
-package com.example.sthenos.mobility;
+package com.example.sthenos.mobility.lowerbody;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -10,16 +9,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
-import com.example.sthenos.mobility.upperbody.NeckStretch;
-import com.example.sthenos.mobility.upperbody.PalmStretch;
-import com.example.sthenos.mobility.upperbody.ShoulderMobility;
-import com.example.sthenos.mobility.upperbody.SideStretch;
-import com.example.sthenos.mobility.upperbody.WristStretch;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UpperBodySelection extends AppCompatActivity implements Adapter.OnSelectionListener {
+public class LowerBodySelection extends AppCompatActivity implements Adapter.OnSelectionListener {
     //Variables
     RecyclerView mobilityDataList;
     List<String> titles;
@@ -41,19 +35,13 @@ public class UpperBodySelection extends AppCompatActivity implements Adapter.OnS
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Neck stretch");
-        titles.add("Shoulder stretch");
-        titles.add("Palm stretch");
-        titles.add("Wrist stretch");
-        titles.add("Side stretch");
+        titles.add("Side split stretch"); //Novice lvl
+        //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.neckstretch);
-        images.add(R.drawable.shouldermobility);
-        images.add(R.drawable.palmstretch);
-        images.add(R.drawable.wriststretch);
-        images.add(R.drawable.sidestreach);
+        images.add(R.drawable.ic_name);
+        //images.add();
 
 
         /*--------Adapter---------*/
@@ -72,24 +60,6 @@ public class UpperBodySelection extends AppCompatActivity implements Adapter.OnS
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
-                Intent neck = new Intent(this, NeckStretch.class);
-                startActivity(neck);
-                break;
-            case 1:
-                Intent shoulder = new Intent(this, ShoulderMobility.class);
-                startActivity(shoulder);
-                break;
-            case 2:
-                Intent palm = new Intent(this, PalmStretch.class);
-                startActivity(palm);
-                break;
-            case 3:
-                Intent wrist = new Intent(this, WristStretch.class);
-                startActivity(wrist);
-                break;
-            case 4:
-                Intent side = new Intent(this, SideStretch.class);
-                startActivity(side);
                 break;
 
         }
