@@ -7,7 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.sthenos.indoor.abs.AbSelection;
+import com.example.sthenos.indoor.balance.BalanceSelection;
+import com.example.sthenos.indoor.cardio.CardioSelection;
+import com.example.sthenos.indoor.jump.JumpSelection;
+import com.example.sthenos.indoor.pullups.PullUpSelection;
 import com.example.sthenos.indoor.pushups.PushUpSelection;
+import com.example.sthenos.indoor.squats.SquatSelection;
+import com.example.sthenos.indoor.weights.WeightSelection;
 
 public class IndoorActivity extends AppCompatActivity {
 
@@ -45,8 +52,8 @@ public class IndoorActivity extends AppCompatActivity {
         weightsCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, WeightLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, WeightSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -54,8 +61,8 @@ public class IndoorActivity extends AppCompatActivity {
         absIndoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, AbsLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, AbSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -63,8 +70,8 @@ public class IndoorActivity extends AppCompatActivity {
         jumpIndoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, JumpLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, JumpSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -72,8 +79,8 @@ public class IndoorActivity extends AppCompatActivity {
         squatsIndoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, SquatsLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, SquatSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -81,8 +88,8 @@ public class IndoorActivity extends AppCompatActivity {
         pullupsIndoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, PullUpIndoorLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, PullUpSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -90,8 +97,8 @@ public class IndoorActivity extends AppCompatActivity {
         cardioInddorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, CardioLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, CardioSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
@@ -99,8 +106,8 @@ public class IndoorActivity extends AppCompatActivity {
         balanceIndoorCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(IndoorActivity.this, BalanceLibrary.class);
-                //startActivity(intent);
+                Intent intent = new Intent(IndoorActivity.this, BalanceSelection.class);
+                startActivity(intent);
                 //finish();
             }
         });
