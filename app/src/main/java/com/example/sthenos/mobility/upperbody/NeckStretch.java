@@ -60,7 +60,8 @@ public class NeckStretch extends AppCompatActivity {
 
         muscleGroupText.setText("Neck");
 
-        descText.setText("Stretch your neck by bending it either left or right and use your hand to put more stress on it");
+        descText.setText("Stretch your neck by bending it either left or right and" +
+                " use your hand to put more stress on it");
 
         /*---------Button onClickListener--------------*/
 

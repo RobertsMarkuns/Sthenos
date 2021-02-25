@@ -1,5 +1,6 @@
 package com.example.sthenos.mobility.lowerbody;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -35,12 +36,12 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Side split stretch"); //Novice lvl
+        titles.add("Hamstring stretch"); //Novice lvl
         //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.ic_name);
+        images.add(R.drawable.hamstring);
         //images.add();
 
 
@@ -60,6 +61,8 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent hamstring = new Intent(this, Hamstring.class);
+                startActivity(hamstring);
                 break;
 
         }

@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.cardio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class CardioSelection extends AppCompatActivity implements Adapter.OnSele
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Cardio");
+        titles.add("Jump rope");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.jumprope);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class CardioSelection extends AppCompatActivity implements Adapter.OnSele
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent jumprope = new Intent(this, JumpRope.class);
+                startActivity(jumprope);
                 break;
         }
     }

@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.weights;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class WeightSelection extends AppCompatActivity implements Adapter.OnSele
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Weighted squat");
+        titles.add("Bench press");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.benchpress);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class WeightSelection extends AppCompatActivity implements Adapter.OnSele
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent benchpress = new Intent(this, Benchpress.class);
+                startActivity(benchpress);
                 break;
         }
     }

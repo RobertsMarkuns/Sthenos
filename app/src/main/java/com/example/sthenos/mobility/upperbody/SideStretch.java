@@ -22,7 +22,7 @@ import com.example.sthenos.R;
 import com.example.sthenos.gadgets.Stopwatch;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.sthenos.R.drawable.inclinepushups;
+import static com.example.sthenos.R.drawable.sidestreach;
 
 public class SideStretch extends AppCompatActivity {
 
@@ -51,7 +51,7 @@ public class SideStretch extends AppCompatActivity {
         stopWatch = findViewById(R.id.btnStopWatch);
 
         /*---------Setting ImageView values--------------*/
-        exerciseImage.setImageResource(inclinepushups);
+        exerciseImage.setImageResource(sidestreach);
 
         /*---------Setting TextView values--------------*/
 

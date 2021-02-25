@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.squats;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class SquatSelection extends AppCompatActivity implements Adapter.OnSelec
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Squat");
+        titles.add("Squats weighted");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.weightedsquat);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class SquatSelection extends AppCompatActivity implements Adapter.OnSelec
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent weighted = new Intent(this, SquatsWeighted.class);
+                startActivity(weighted);
                 break;
         }
     }
