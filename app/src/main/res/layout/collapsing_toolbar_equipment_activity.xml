@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/gradient_black_red_underglow"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@color/red_700"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
 
 
@@ -134,7 +134,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnAddToCart"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                     android:fontFamily="@font/rubik_medium"
                     android:textColor="@color/white"
                     android:text="@string/add_to_cart"
-                    android:drawableEnd="@drawable/ic_baseline_shopping_cart_24"/>
+                    android:drawableEnd="@drawable/cart_white"/>
 
 
             </LinearLayout>
