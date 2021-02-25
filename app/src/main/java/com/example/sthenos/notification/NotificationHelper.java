@@ -47,8 +47,8 @@ public class NotificationHelper extends ContextWrapper {
 
     public NotificationCompat.Builder getChannelNotificationToDoList(){
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
-                .setContentTitle("ToDos due Today")
-                .setContentText("You have some ToDos due today!")
+                .setContentTitle("ToDos Reminder")
+                .setContentText("You have some ToDos to complete!")
                 .setSmallIcon(R.drawable.mobility);
 
     }

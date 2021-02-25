@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.jump;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class JumpSelection extends AppCompatActivity implements Adapter.OnSelect
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Jump");
+        titles.add("Star jumps");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.star_jumps_exercise);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class JumpSelection extends AppCompatActivity implements Adapter.OnSelect
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent starjumps = new Intent(this, StarJumps.class);
+                startActivity(starjumps);
                 break;
         }
     }

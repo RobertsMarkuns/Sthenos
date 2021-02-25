@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.balance;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class BalanceSelection extends AppCompatActivity implements Adapter.OnSel
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Balance");
+        titles.add("Handstand");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.handstandpng);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class BalanceSelection extends AppCompatActivity implements Adapter.OnSel
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent handstand = new Intent(this, Handstand.class);
+                startActivity(handstand);
                 break;
         }
     }

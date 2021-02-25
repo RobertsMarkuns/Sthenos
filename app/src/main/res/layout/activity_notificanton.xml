@@ -36,23 +36,23 @@
         android:fontFamily="@font/rubik_bold"
         android:textSize="24sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnTimePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="30dp"
-        android:background="@drawable/btn_purple"
+        android:background="@drawable/btn_rounded_app"
         android:text="@string/open_time_picker"
         android:fontFamily="@font/rubik_medium"
         android:textColor="@color/white"/>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCancelReminder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="30dp"
-        android:background="@drawable/btn_purple"
+        android:background="@drawable/btn_rounded_app"
         android:text="@string/cancel_alarm"
         android:fontFamily="@font/rubik_medium"
         android:textColor="@color/white"/>

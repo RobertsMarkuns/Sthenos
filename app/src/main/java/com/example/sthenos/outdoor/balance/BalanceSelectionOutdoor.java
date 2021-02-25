@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.balance;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,12 +37,12 @@ public class BalanceSelectionOutdoor extends AppCompatActivity implements Adapte
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Balance"); //Novice lvl
+        titles.add("Handstand"); //Novice lvl
         //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.handstandpng);
         //images.add();
 
 
@@ -61,6 +62,8 @@ public class BalanceSelectionOutdoor extends AppCompatActivity implements Adapte
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent handstand = new Intent(this, HandstandOutdoor.class);
+                startActivity(handstand);
                 break;
 
         }

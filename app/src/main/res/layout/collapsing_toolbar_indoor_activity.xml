@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:background="@color/orange"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@color/orange"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
 
 
@@ -134,7 +134,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnRepRandomizer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                     android:textColor="@color/white"/>
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnStopWatch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -168,6 +168,7 @@
         android:clickable="true"
         android:contentDescription="@string/content_description_for_collapsing_toolbar_image"
         android:focusable="true"
+        android:visibility="gone"
         android:src="@drawable/ic_baseline_play_arrow_24"
         app:fabSize="normal"
         app:layout_anchor="@id/AppBarTemplate"

@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.squats;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -41,7 +42,7 @@ public class SquatSelectionOutdoor extends AppCompatActivity implements Adapter.
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.squatpng);
         //images.add();
 
 
@@ -61,6 +62,8 @@ public class SquatSelectionOutdoor extends AppCompatActivity implements Adapter.
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent squat = new Intent(this, SquatOutside.class);
+                startActivity(squat);
                 break;
 
         }

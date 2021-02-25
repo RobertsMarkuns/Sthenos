@@ -1,5 +1,6 @@
 package com.example.sthenos.indoor.abs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,11 +37,11 @@ public class AbSelection extends AppCompatActivity implements Adapter.OnSelectio
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Abs");
+        titles.add("Toes to bar");
         //titles.add("");
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.toestobar);
         //images.add(R.drawable.);
 
 
@@ -60,6 +61,8 @@ public class AbSelection extends AppCompatActivity implements Adapter.OnSelectio
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent toesToBar = new Intent(this, LegsToBar.class);
+                startActivity(toesToBar);
                 break;
         }
     }

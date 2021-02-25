@@ -146,13 +146,14 @@
             android:textStyle="bold"
             android:fontFamily="@font/rubik"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:background="@drawable/btn_black"
+            android:textColor="@color/white"
             android:fontFamily="@font/rubik_medium"
             android:onClick="openAddModifyTask"
             android:paddingHorizontal="70dp"

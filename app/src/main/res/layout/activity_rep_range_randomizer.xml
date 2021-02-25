@@ -172,11 +172,11 @@
 
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRoll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_red"
+        android:background="@drawable/btn_rounded_app"
         android:fontFamily="@font/rubik_medium"
         android:text="@string/roll"
         android:textColor="@color/white"

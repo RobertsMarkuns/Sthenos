@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.abs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.pushups.InclinePushUp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,12 +38,12 @@ public class AbSelectionOutdoor extends AppCompatActivity implements Adapter.OnS
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Abs"); //Novice lvl
+        titles.add("Toes to bar"); //Novice lvl
         //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.toestobar);
         //images.add();
 
 
@@ -61,6 +63,8 @@ public class AbSelectionOutdoor extends AppCompatActivity implements Adapter.OnS
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent toesToBar = new Intent(this, LegsToBarOutside.class);
+                startActivity(toesToBar);
                 break;
 
         }

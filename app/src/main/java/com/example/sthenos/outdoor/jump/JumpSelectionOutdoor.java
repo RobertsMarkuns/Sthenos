@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.jump;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,12 +37,12 @@ public class JumpSelectionOutdoor extends AppCompatActivity implements Adapter.O
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Jump"); //Novice lvl
+        titles.add("Star jump"); //Novice lvl
         //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.star_jumps_exercise);
         //images.add();
 
 
@@ -61,6 +62,8 @@ public class JumpSelectionOutdoor extends AppCompatActivity implements Adapter.O
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent starjump = new Intent(this, StarJumpsOutside.class);
+                startActivity(starjump);
                 break;
 
         }

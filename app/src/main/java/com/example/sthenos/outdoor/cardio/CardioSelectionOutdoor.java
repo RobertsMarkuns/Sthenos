@@ -1,5 +1,6 @@
 package com.example.sthenos.outdoor.cardio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
@@ -36,12 +37,12 @@ public class CardioSelectionOutdoor extends AppCompatActivity implements Adapter
         images = new ArrayList<>();
 
         /*--------Title list---------*/
-        titles.add("Cardio"); //Novice lvl
+        titles.add("Running"); //Novice lvl
         //titles.add("");
 
 
         /*--------Image list---------*/
-        images.add(R.drawable.userprofile);
+        images.add(R.drawable.runing);
         //images.add();
 
 
@@ -61,6 +62,8 @@ public class CardioSelectionOutdoor extends AppCompatActivity implements Adapter
     public void onSelectionClick(int position) {
         switch (position){
             case 0:
+                Intent run = new Intent(this, Runing.class);
+                startActivity(run);
                 break;
 
         }
