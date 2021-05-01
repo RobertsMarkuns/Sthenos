@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.cardio.JumpRope;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,10 +39,16 @@ public class JumpSelection extends AppCompatActivity implements Adapter.OnSelect
 
         /*--------Title list---------*/
         titles.add("Star jumps");
+        titles.add("Box Jumps");
+        titles.add("Jump Rope");
+        titles.add("Depth Jumps");
         //titles.add("");
 
         /*--------Image list---------*/
         images.add(R.drawable.star_jumps_exercise);
+        images.add(R.drawable.boxjumps);
+        images.add(R.drawable.jumprope);
+        images.add(R.drawable.boxjumps);
         //images.add(R.drawable.);
 
 
@@ -63,6 +70,18 @@ public class JumpSelection extends AppCompatActivity implements Adapter.OnSelect
             case 0:
                 Intent starjumps = new Intent(this, StarJumps.class);
                 startActivity(starjumps);
+                break;
+            case 1:
+                Intent boxjumps = new Intent(this, BoxJumps.class);
+                startActivity(boxjumps);
+                break;
+            case 2:
+                Intent jumprope = new Intent(this, JumpRope.class);
+                startActivity(jumprope);
+                break;
+            case 3:
+                Intent depthjumps = new Intent(this, DepthJumps.class);
+                startActivity(depthjumps);
                 break;
         }
     }

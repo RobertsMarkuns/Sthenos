@@ -65,7 +65,7 @@ public class RegularPlank extends AppCompatActivity {
         levelTag.setText("Novice");
         levelTag.setBackground(Drawable.createFromPath("@drawable/gradient_cyangreen"));
 
-        muscleGroupText.setText("Back, Shoulders");
+        muscleGroupText.setText("Back, Shoulders, Abs");
 
         descText.setText("Make sure your hands are 90 degrees and you should be extend your shoulders downwards and " +
                 "remember to keep your body straight");

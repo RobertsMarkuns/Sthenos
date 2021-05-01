@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.abs.AbsSidePlank;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,12 +39,20 @@ public class PlankSelection extends AppCompatActivity implements Adapter.OnSelec
 
         /*--------Title list---------*/
         titles.add("Regular plank"); //Novice lvl
+        titles.add("Side plank");
+        titles.add("Tuck planche");
+        titles.add("Straddle planche");
+        titles.add("Full planche");
         //titles.add("");
 
 
         /*--------Image list---------*/
         images.add(R.drawable.regularplank);
-        //images.add();
+        images.add(R.drawable.sideplank);
+        images.add(R.drawable.tuckplanche);
+        images.add(R.drawable.straddleplanche);
+        images.add(R.drawable.fullplanche);
+        //images.add(R.drawable.);
 
 
         /*--------Adapter---------*/
@@ -64,6 +73,22 @@ public class PlankSelection extends AppCompatActivity implements Adapter.OnSelec
             case 0:
                 Intent regular = new Intent(this, RegularPlank.class);
                 startActivity(regular);
+                break;
+            case 1:
+                Intent sideplank = new Intent(this, AbsSidePlank.class);
+                startActivity(sideplank);
+                break;
+            case 2:
+                Intent tuckplanche = new Intent(this, TuckPlanche.class);
+                startActivity(tuckplanche);
+                break;
+            case 3:
+                Intent straddleplanche = new Intent(this, StraddlePlanche.class);
+                startActivity(straddleplanche);
+                break;
+            case 4:
+                Intent fullplanche = new Intent(this, FullPlanche.class);
+                startActivity(fullplanche);
                 break;
 
         }

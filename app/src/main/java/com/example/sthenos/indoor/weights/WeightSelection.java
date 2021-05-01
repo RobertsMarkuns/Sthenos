@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.squats.SquatsWeighted;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,10 +39,22 @@ public class WeightSelection extends AppCompatActivity implements Adapter.OnSele
 
         /*--------Title list---------*/
         titles.add("Bench press");
+        titles.add("Bicep curls");
+        titles.add("Dead lift");
+        titles.add("Weighted Dips");
+        titles.add("Weighted pull-ups");
+        titles.add("Weighted push-ups");
+        titles.add("Weighted squat");
         //titles.add("");
 
         /*--------Image list---------*/
         images.add(R.drawable.benchpress);
+        images.add(R.drawable.crulbarbicepcurls);
+        images.add(R.drawable.deadlift);
+        images.add(R.drawable.weighteddips);
+        images.add(R.drawable.weightedpullups);
+        images.add(R.drawable.weightedpushup);
+        images.add(R.drawable.weightedsquat);
         //images.add(R.drawable.);
 
 
@@ -63,6 +76,30 @@ public class WeightSelection extends AppCompatActivity implements Adapter.OnSele
             case 0:
                 Intent benchpress = new Intent(this, Benchpress.class);
                 startActivity(benchpress);
+                break;
+            case 1:
+                Intent crulbarbicepcurls = new Intent(this, BicepCurls.class);
+                startActivity(crulbarbicepcurls);
+                break;
+            case 2:
+                Intent deadlift = new Intent(this, Deadlift.class);
+                startActivity(deadlift);
+                break;
+            case 3:
+                Intent weighteddips = new Intent(this, WeightedDips.class);
+                startActivity(weighteddips);
+                break;
+            case 4:
+                Intent weightedpullups = new Intent(this, WeightedPullUps.class);
+                startActivity(weightedpullups);
+                break;
+            case 5:
+                Intent weightedpushup = new Intent(this, WeightedPushUps.class);
+                startActivity(weightedpushup);
+                break;
+            case 6:
+                Intent weightedsquat = new Intent(this, SquatsWeighted.class);
+                startActivity(weightedsquat);
                 break;
         }
     }

@@ -37,12 +37,26 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
 
         /*--------Title list---------*/
         titles.add("Hamstring stretch"); //Novice lvl
+        titles.add("Calves stretch");
+        titles.add("Hamstring one leg in air stretch");
+        titles.add("Hamstring one leg on the ground stretch");
+        titles.add("Hamstring pike stretch");
+        titles.add("Hamstring with palms on the floor stretch");
+        titles.add("Hip flexor stretch");
+        titles.add("Thigh stretch");
         //titles.add("");
 
 
         /*--------Image list---------*/
         images.add(R.drawable.hamstring);
-        //images.add();
+        images.add(R.drawable.calves);
+        images.add(R.drawable.hamstring_oneleginair);
+        images.add(R.drawable.hamstring_onelegonground);
+        images.add(R.drawable.hamstring_pike);
+        images.add(R.drawable.hamstring_w_palmsonfloor);
+        images.add(R.drawable.hipflexorstretch);
+        images.add(R.drawable.thighstretch_standingononeleg);
+        //images.add(R.drawable.);
 
 
         /*--------Adapter---------*/
@@ -63,6 +77,34 @@ public class LowerBodySelection extends AppCompatActivity implements Adapter.OnS
             case 0:
                 Intent hamstring = new Intent(this, Hamstring.class);
                 startActivity(hamstring);
+                break;
+            case 1:
+                Intent calves = new Intent(this, Calves.class);
+                startActivity(calves);
+                break;
+            case 2:
+                Intent hamstring_oneleginair = new Intent(this, HamStrLegInAir.class);
+                startActivity(hamstring_oneleginair);
+                break;
+            case 3:
+                Intent hamstring_onelegonground = new Intent(this, HamStrLegOnGround.class);
+                startActivity(hamstring_onelegonground);
+                break;
+            case 4:
+                Intent hamstring_pike = new Intent(this, HamStrPike.class);
+                startActivity(hamstring_pike);
+                break;
+            case 5:
+                Intent hamstring_w_palmsonfloor = new Intent(this, HamStrPalmOnFloor.class);
+                startActivity(hamstring_w_palmsonfloor);
+                break;
+            case 6:
+                Intent hipflexorstretch = new Intent(this, HipFexStretch.class);
+                startActivity(hipflexorstretch);
+                break;
+            case 7:
+                Intent thighstretch_standingononeleg = new Intent(this, ThighStretch.class);
+                startActivity(thighstretch_standingononeleg);
                 break;
 
         }

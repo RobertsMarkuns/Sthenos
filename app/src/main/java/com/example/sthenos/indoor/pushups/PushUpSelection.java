@@ -11,6 +11,8 @@ import android.view.WindowManager;
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
 import com.example.sthenos.indoor.pushups.InclinePushUp;
+import com.example.sthenos.indoor.weights.WeightedDips;
+import com.example.sthenos.indoor.weights.WeightedPushUps;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +68,9 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
         titles.add("Full planche push-ups from the ground (Level 98)");//Pro lvl
         titles.add("Deep full planche push-ups (Level 100)");//Pro lvl
 
-
+        //From weights
+        titles.add("Weighted push-ups");
+        titles.add("Weighted Dips");
 
 
         /*--------Image list---------*/
@@ -97,6 +101,9 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
         images.add(R.drawable.fullplanchepushupsftg);
         images.add(R.drawable.deepfullplanchepushups);
 
+        //From weights
+        images.add(R.drawable.weightedpushup);
+        images.add(R.drawable.weighteddips);
 
         /*--------Adapter---------*/
         adapter = new Adapter(this, titles, images, this);
@@ -217,6 +224,12 @@ public class PushUpSelection extends AppCompatActivity implements Adapter.OnSele
                 Intent deepfullplanche = new Intent(this, DeepFullPlanchePushUp.class);
                 startActivity(deepfullplanche);
                 break;
+            case 26:
+                Intent weightedpushup = new Intent(this, WeightedPushUps.class);
+                startActivity(weightedpushup);
+            case 27:
+                Intent weighteddips = new Intent(this, WeightedDips.class);
+                startActivity(weighteddips);
 
         }
     }

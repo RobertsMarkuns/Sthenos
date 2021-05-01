@@ -38,10 +38,20 @@ public class CardioSelection extends AppCompatActivity implements Adapter.OnSele
 
         /*--------Title list---------*/
         titles.add("Jump rope");
+        titles.add("Boxing");
+        titles.add("Dancing");
+        titles.add("Rowing");
+        titles.add("Running on a treadmill");
+        titles.add("Swimming");
         //titles.add("");
 
         /*--------Image list---------*/
         images.add(R.drawable.jumprope);
+        images.add(R.drawable.boxing);
+        images.add(R.drawable.dancing);
+        images.add(R.drawable.rowing);
+        images.add(R.drawable.runingontreadmill);
+        images.add(R.drawable.swiming);
         //images.add(R.drawable.);
 
 
@@ -64,6 +74,27 @@ public class CardioSelection extends AppCompatActivity implements Adapter.OnSele
                 Intent jumprope = new Intent(this, JumpRope.class);
                 startActivity(jumprope);
                 break;
+            case 1:
+                Intent boxing = new Intent(this, Boxing.class);
+                startActivity(boxing);
+                break;
+            case 2:
+                Intent dancing = new Intent(this, Dancing.class);
+                startActivity(dancing);
+                break;
+            case 3:
+                Intent rowing = new Intent(this, Rowing.class);
+                startActivity(rowing);
+                break;
+            case 4:
+                Intent runingontreadmill = new Intent(this, RuningOnATreadmill.class);
+                startActivity(runingontreadmill);
+                break;
+            case 5:
+                Intent swiming = new Intent(this, Swimming.class);
+                startActivity(swiming);
+                break;
+
         }
     }
 }

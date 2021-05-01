@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.cardio.JumpRope;
+import com.example.sthenos.indoor.cardio.Swimming;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,12 +40,18 @@ public class CardioSelectionOutdoor extends AppCompatActivity implements Adapter
 
         /*--------Title list---------*/
         titles.add("Running"); //Novice lvl
+        titles.add("Jump rope");
+        titles.add("Swimming");
+        titles.add("Bike riding");
         //titles.add("");
 
 
         /*--------Image list---------*/
         images.add(R.drawable.runing);
-        //images.add();
+        images.add(R.drawable.jumprope);
+        images.add(R.drawable.swiming);
+        images.add(R.drawable.bikeriding);
+        //images.add(R.drawable.);
 
 
         /*--------Adapter---------*/
@@ -64,6 +72,18 @@ public class CardioSelectionOutdoor extends AppCompatActivity implements Adapter
             case 0:
                 Intent run = new Intent(this, Runing.class);
                 startActivity(run);
+                break;
+            case 1:
+                Intent jumprope = new Intent(this, JumpRopeOutdoor.class);
+                startActivity(jumprope);
+                break;
+            case 2:
+                Intent swiming = new Intent(this, SwimmingOutdoor.class);
+                startActivity(swiming);
+                break;
+            case 3:
+                Intent bikeriding = new Intent(this, BikeRiding.class);
+                startActivity(bikeriding);
                 break;
 
         }

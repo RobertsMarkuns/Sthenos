@@ -1,4 +1,4 @@
-package com.example.sthenos.outdoor.abs;
+package com.example.sthenos.indoor.weights;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -22,12 +22,11 @@ import com.example.sthenos.OutdoorActivity;
 import com.example.sthenos.R;
 import com.example.sthenos.gadgets.RepRangeRandomizer;
 import com.example.sthenos.gadgets.Stopwatch;
-import com.example.sthenos.indoor.abs.LegsToBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.sthenos.R.drawable.toestobar;
+import static com.example.sthenos.R.drawable.crulbarbicepcurls;
 
-public class LegsToBarOutside extends AppCompatActivity {
+public class BicepCurls extends AppCompatActivity {
 
     //Variables
     TextView exerciseTitle, levelTag, muscleGroupText, descText;
@@ -39,7 +38,7 @@ public class LegsToBarOutside extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapsing_toolbar_outdoor_activity);
+        setContentView(R.layout.collapsing_toolbar_indoor_activity);
 
         /*--------Hooks---------*/
         //Image
@@ -56,26 +55,24 @@ public class LegsToBarOutside extends AppCompatActivity {
         stopWatch = findViewById(R.id.btnStopWatch);
 
         /*---------Setting ImageView values--------------*/
-        exerciseImage.setImageResource(toestobar);
+        exerciseImage.setImageResource(crulbarbicepcurls);
 
         /*---------Setting TextView values--------------*/
 
-        exerciseTitle.setText("Toes To Bar");
+        exerciseTitle.setText("Bicep curls");
 
         levelTag.setText("Intermediate");
         levelTag.setBackground(Drawable.createFromPath("@drawable/gradient_cyangreen"));
 
-        muscleGroupText.setText("Abs, Legs");
+        muscleGroupText.setText("Biceps");
 
-        descText.setText("Hold on to a bar and raise your toes to the bar," +
-                " make sure to stay straight and engage your entire body." +
-                " Never sacrifice form for reps.");
+        descText.setText("Pick a weight that lets you do more reps. More reps more gain. Less reps less gain");
 
         /*---------Button onClickListener--------------*/
         repRandomizer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LegsToBarOutside.this, RepRangeRandomizer.class);
+                Intent intent = new Intent(BicepCurls.this, RepRangeRandomizer.class);
                 startActivity(intent);
             }
         });
@@ -83,7 +80,7 @@ public class LegsToBarOutside extends AppCompatActivity {
         stopWatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LegsToBarOutside.this, Stopwatch.class);
+                Intent intent = new Intent(BicepCurls.this, Stopwatch.class);
                 startActivity(intent);
             }
         });
@@ -97,28 +94,28 @@ public class LegsToBarOutside extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.nav_indoor:
-                        Intent indoor = new Intent(LegsToBarOutside.this, IndoorActivity.class);
-                        Toast.makeText(LegsToBarOutside.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent indoor = new Intent(BicepCurls.this, IndoorActivity.class);
+                        Toast.makeText(BicepCurls.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         startActivity(indoor);
                         break;
                     case R.id.nav_outdoor:
-                        Intent outdoor = new Intent(LegsToBarOutside.this, OutdoorActivity.class);
-                        Toast.makeText(LegsToBarOutside.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent outdoor = new Intent(BicepCurls.this, OutdoorActivity.class);
+                        Toast.makeText(BicepCurls.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         startActivity(outdoor);
                         break;
                     case R.id.nav_home:
-                        Intent home = new Intent(LegsToBarOutside.this, MainActivity.class);
-                        Toast.makeText(LegsToBarOutside.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent home = new Intent(BicepCurls.this, MainActivity.class);
+                        Toast.makeText(BicepCurls.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         startActivity(home);
                         break;
                     case R.id.nav_mobility:
-                        Intent mobility = new Intent(LegsToBarOutside.this, MobilityActivity.class);
-                        Toast.makeText(LegsToBarOutside.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent mobility = new Intent(BicepCurls.this, MobilityActivity.class);
+                        Toast.makeText(BicepCurls.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         startActivity(mobility);
                         break;
                     case R.id.nav_equipment:
-                        Intent equipment = new Intent(LegsToBarOutside.this, Equipment.class);
-                        Toast.makeText(LegsToBarOutside.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent equipment = new Intent(BicepCurls.this, Equipment.class);
+                        Toast.makeText(BicepCurls.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                         startActivity(equipment);
                         break;
                 }

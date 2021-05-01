@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sthenos.Adapter;
 import com.example.sthenos.R;
+import com.example.sthenos.indoor.weights.WeightedPullUps;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +60,9 @@ public class PullUpSelection extends AppCompatActivity implements Adapter.OnSele
         titles.add("Back Lever Pull Ups"); //Pro
         titles.add("Front Lever Pull Ups"); //Pro
 
+        //From weights
+        titles.add("Weighted pull-ups"); //Intermediate
+
         /*--------Image list---------*/
         images.add(R.drawable.australianpullups);
         images.add(R.drawable.negativepullups);
@@ -80,6 +84,9 @@ public class PullUpSelection extends AppCompatActivity implements Adapter.OnSele
         images.add(R.drawable.humanflagpullups);
         images.add(R.drawable.backleverpullups);
         images.add(R.drawable.frontleverpullups);
+
+        //From weights
+        images.add(R.drawable.weightedpullups);
 
         /*--------Adapter---------*/
         adapter = new Adapter(this, titles, images, this);
@@ -175,6 +182,10 @@ public class PullUpSelection extends AppCompatActivity implements Adapter.OnSele
             case 19:
                 Intent front = new Intent(this, FrontLeverPullUp.class);
                 startActivity(front);
+                break;
+            case 20:
+                Intent weightedpullups = new Intent(this, WeightedPullUps.class);
+                startActivity(weightedpullups);
                 break;
         }
     }
