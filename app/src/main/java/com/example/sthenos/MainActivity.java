@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.example.sthenos.database.SignUpActivity;
+import com.example.sthenos.database.LoginActivity;
 import com.example.sthenos.database.UserProfile;
 import com.example.sthenos.notification.NotificantonActivity;
 import com.example.sthenos.todo.ToDoActivity;
@@ -133,10 +133,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent equipment = new Intent(MainActivity.this,Equipment.class);
                 startActivity(equipment);
                 break;
-            case R.id.nav_profile:
-                Intent profile = new Intent(MainActivity.this, UserProfile.class);
-                startActivity(profile);
-                break;
+           // case R.id.nav_profile:
+                //Intent profile = new Intent(MainActivity.this, UserProfile.class);
+                //startActivity(profile);
+                //break;
             case R.id.nav_notification:
                 Intent notification = new Intent(MainActivity.this, NotificantonActivity.class);
                 startActivity(notification);
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(todo);
                 break;
             case R.id.nav_logout:
-                Intent logout = new Intent(MainActivity.this, SignUpActivity.class);
+                Intent logout = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(logout);
                 finish();
                 break;

@@ -62,16 +62,6 @@ public class LoginActivity extends AppCompatActivity {
 
         /*------------------onClickListener-----------------*/
 
-        //ONLY FOR DEV, DELETE BEFORE PUSHING TO GIT OR FINAL PROJECT SEND IN
-        logo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
         //On button click opens sign up
         btnSignUpHere.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                             data[0] = username;
                             data[1] = password;
 
-                            PutData putData = new PutData("http://192.168.43.53:8080/Sthenos/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://IPv4Adress:8080/SthenosPHP/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

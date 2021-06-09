@@ -119,7 +119,7 @@ public class SignUpActivity extends AppCompatActivity {
                         data[2] = password;
                         data[3] = email;
 
-                        PutData putData = new PutData("http://192.168.43.53:8080/Sthenos/signup.php", "POST", field, data);
+                        PutData putData = new PutData("http://IPv4Adress:8080/SthenosPHP/signup.php", "POST", field, data);
                         if (putData.startPut()) {
                             if (putData.onComplete()) {
 
